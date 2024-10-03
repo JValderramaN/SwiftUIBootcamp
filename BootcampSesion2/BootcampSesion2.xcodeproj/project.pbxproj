@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5BB20C2CA6146F00BB6783 /* NavigationDestinationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB20B2CA6146F00BB6783 /* NavigationDestinationModifier.swift */; };
+		AB5BB20E2CA6148600BB6783 /* ListaDeItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB20D2CA6148600BB6783 /* ListaDeItems.swift */; };
+		AB5BB2102CA6149800BB6783 /* DetalleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB20F2CA6149800BB6783 /* DetalleItem.swift */; };
+		AB5BB2132CA6150300BB6783 /* Tarea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB2122CA6150300BB6783 /* Tarea.swift */; };
+		AB5BB2152CA6151700BB6783 /* ListaDeTareasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB2142CA6151700BB6783 /* ListaDeTareasViewModel.swift */; };
+		AB5BB2172CA6153300BB6783 /* FilaDeTarea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB2162CA6153300BB6783 /* FilaDeTarea.swift */; };
+		AB5BB21A2CA6155900BB6783 /* CirclePositionPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB2192CA6155900BB6783 /* CirclePositionPreferenceKey.swift */; };
+		AB5BB21C2CA6157400BB6783 /* DraggableCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB21B2CA6157400BB6783 /* DraggableCircleView.swift */; };
 		AB6970CD2C9CC0C6006A04B7 /* BootcampSesion2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6970CC2C9CC0C6006A04B7 /* BootcampSesion2App.swift */; };
 		AB6970CF2C9CC0C6006A04B7 /* ContentViewObservacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6970CE2C9CC0C6006A04B7 /* ContentViewObservacion.swift */; };
 		AB6970D12C9CC0C7006A04B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6970D02C9CC0C7006A04B7 /* Assets.xcassets */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB5BB20B2CA6146F00BB6783 /* NavigationDestinationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestinationModifier.swift; sourceTree = "<group>"; };
+		AB5BB20D2CA6148600BB6783 /* ListaDeItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeItems.swift; sourceTree = "<group>"; };
+		AB5BB20F2CA6149800BB6783 /* DetalleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleItem.swift; sourceTree = "<group>"; };
+		AB5BB2122CA6150300BB6783 /* Tarea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarea.swift; sourceTree = "<group>"; };
+		AB5BB2142CA6151700BB6783 /* ListaDeTareasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeTareasViewModel.swift; sourceTree = "<group>"; };
+		AB5BB2162CA6153300BB6783 /* FilaDeTarea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilaDeTarea.swift; sourceTree = "<group>"; };
+		AB5BB2192CA6155900BB6783 /* CirclePositionPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePositionPreferenceKey.swift; sourceTree = "<group>"; };
+		AB5BB21B2CA6157400BB6783 /* DraggableCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableCircleView.swift; sourceTree = "<group>"; };
 		AB6970C92C9CC0C6006A04B7 /* BootcampSesion2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampSesion2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6970CC2C9CC0C6006A04B7 /* BootcampSesion2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootcampSesion2App.swift; sourceTree = "<group>"; };
 		AB6970CE2C9CC0C6006A04B7 /* ContentViewObservacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewObservacion.swift; sourceTree = "<group>"; };
@@ -36,6 +52,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB5BB2092CA6143D00BB6783 /* Navegacion */ = {
+			isa = PBXGroup;
+			children = (
+				AB6970DC2C9CC440006A04B7 /* ContentViewNavegation.swift */,
+				AB5BB20B2CA6146F00BB6783 /* NavigationDestinationModifier.swift */,
+				AB5BB20D2CA6148600BB6783 /* ListaDeItems.swift */,
+				AB5BB20F2CA6149800BB6783 /* DetalleItem.swift */,
+			);
+			path = Navegacion;
+			sourceTree = "<group>";
+		};
+		AB5BB20A2CA6145200BB6783 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AB6970CC2C9CC0C6006A04B7 /* BootcampSesion2App.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AB5BB2112CA614B100BB6783 /* Observacion */ = {
+			isa = PBXGroup;
+			children = (
+				AB6970CE2C9CC0C6006A04B7 /* ContentViewObservacion.swift */,
+				AB5BB2122CA6150300BB6783 /* Tarea.swift */,
+				AB5BB2142CA6151700BB6783 /* ListaDeTareasViewModel.swift */,
+				AB5BB2162CA6153300BB6783 /* FilaDeTarea.swift */,
+			);
+			path = Observacion;
+			sourceTree = "<group>";
+		};
+		AB5BB2182CA6154A00BB6783 /* Gestos */ = {
+			isa = PBXGroup;
+			children = (
+				AB6970DA2C9CC433006A04B7 /* ContentViewGestos.swift */,
+				AB5BB2192CA6155900BB6783 /* CirclePositionPreferenceKey.swift */,
+				AB5BB21B2CA6157400BB6783 /* DraggableCircleView.swift */,
+			);
+			path = Gestos;
+			sourceTree = "<group>";
+		};
 		AB6970C02C9CC0C5006A04B7 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +111,10 @@
 		AB6970CB2C9CC0C6006A04B7 /* BootcampSesion2 */ = {
 			isa = PBXGroup;
 			children = (
-				AB6970CC2C9CC0C6006A04B7 /* BootcampSesion2App.swift */,
-				AB6970CE2C9CC0C6006A04B7 /* ContentViewObservacion.swift */,
-				AB6970DC2C9CC440006A04B7 /* ContentViewNavegation.swift */,
-				AB6970DA2C9CC433006A04B7 /* ContentViewGestos.swift */,
+				AB5BB2182CA6154A00BB6783 /* Gestos */,
+				AB5BB2112CA614B100BB6783 /* Observacion */,
+				AB5BB20A2CA6145200BB6783 /* Core */,
+				AB5BB2092CA6143D00BB6783 /* Navegacion */,
 				AB6970D02C9CC0C7006A04B7 /* Assets.xcassets */,
 				AB6970D22C9CC0C7006A04B7 /* Preview Content */,
 			);
@@ -143,8 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5BB2102CA6149800BB6783 /* DetalleItem.swift in Sources */,
 				AB6970DD2C9CC440006A04B7 /* ContentViewNavegation.swift in Sources */,
+				AB5BB21C2CA6157400BB6783 /* DraggableCircleView.swift in Sources */,
+				AB5BB21A2CA6155900BB6783 /* CirclePositionPreferenceKey.swift in Sources */,
+				AB5BB2172CA6153300BB6783 /* FilaDeTarea.swift in Sources */,
+				AB5BB20C2CA6146F00BB6783 /* NavigationDestinationModifier.swift in Sources */,
+				AB5BB2132CA6150300BB6783 /* Tarea.swift in Sources */,
 				AB6970DB2C9CC433006A04B7 /* ContentViewGestos.swift in Sources */,
+				AB5BB20E2CA6148600BB6783 /* ListaDeItems.swift in Sources */,
+				AB5BB2152CA6151700BB6783 /* ListaDeTareasViewModel.swift in Sources */,
 				AB6970CF2C9CC0C6006A04B7 /* ContentViewObservacion.swift in Sources */,
 				AB6970CD2C9CC0C6006A04B7 /* BootcampSesion2App.swift in Sources */,
 			);

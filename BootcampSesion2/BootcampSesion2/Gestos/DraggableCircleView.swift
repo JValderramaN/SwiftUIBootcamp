@@ -1,44 +1,11 @@
 //
-//  ContentViewGestos.swift
+//  DraggableCircleView.swift
 //  BootcampSesion2
 //
-//  Created by José Valderrama on 19/09/2024.
+//  Created by José Valderrama on 26/09/2024.
 //
 
 import SwiftUI
-
-// PreferenceKey para la posición
-struct CirclePositionPreferenceKey: PreferenceKey {
-    static var defaultValue: CGPoint = .zero
-
-    static func reduce(value: inout CGPoint, nextValue: () -> CGPoint) {
-        value = nextValue()
-    }
-}
-
-// Vista Principal Gestos
-struct ContentViewGestos: View {
-    @State private var circlePosition: CGPoint = .zero
-
-    var body: some View {
-        VStack {
-            Text("Posición del Círculo: x: \(Int(circlePosition.x)), y: \(Int(circlePosition.y))")
-                .padding()
-
-            ZStack {
-                Rectangle()
-                    .fill(Color.blue.opacity(0.1))
-
-                DraggableCircleView()
-                    .onPreferenceChange(CirclePositionPreferenceKey.self) { value in
-                        self.circlePosition = value
-                    }
-            }
-            .frame(height: 400)
-            .border(Color.blue, width: 2)
-        }
-    }
-}
 
 // Vista del Círculo Arrastrable
 struct DraggableCircleView: View {
@@ -78,8 +45,4 @@ struct DraggableCircleView: View {
                 .preference(key: CirclePositionPreferenceKey.self, value: CGPoint(x: offset.width, y: offset.height))
         }
     }
-}
-
-#Preview {
-    ContentViewGestos()
 }

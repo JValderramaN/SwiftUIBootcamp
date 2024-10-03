@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BootcampSesion3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soc-Sc-TsT">
+                                <rect key="frame" x="118.33333333333333" y="79" width="156.66666666666669" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Presentar SwiftUI"/>
+                                <connections>
+                                    <action selector="buttonSwiftUITapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYF-tT-l90"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2r-sZ-83N">
+                                <rect key="frame" x="119.66666666666669" y="129" width="154" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ejecutar ejercicio"/>
+                                <connections>
+                                    <action selector="buttonExerciseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZ5-JO-Pjr"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7XE-TY-KeO">
+                                <rect key="frame" x="10" y="235" width="373" height="573"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CeldaUIKit" id="oTd-CY-BOn" customClass="CeldaUIKITTableViewCell" customModule="BootcampSesion3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="373" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oTd-CY-BOn" id="ymB-uz-A9P">
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3o-5T-siR">
+                                                    <rect key="frame" x="172.33333333333334" y="11.333333333333336" width="28.666666666666657" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            <constraints>
+                                                <constraint firstItem="J3o-5T-siR" firstAttribute="centerY" secondItem="ymB-uz-A9P" secondAttribute="centerY" id="LlD-OO-rn4"/>
+                                                <constraint firstItem="J3o-5T-siR" firstAttribute="centerX" secondItem="ymB-uz-A9P" secondAttribute="centerX" id="Pig-Iq-7hT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="J3o-5T-siR" id="pW8-kU-Hfm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="18J-xW-xIH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dud-Us-pte"/>
+                                </connections>
+                            </tableView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Yg-AF-xzU">
+                                <rect key="frame" x="172" y="184" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="j6i-Mu-8o8"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDl-MD-oWg">
+                                <rect key="frame" x="120" y="189" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="soc-Sc-TsT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="1ts-Gn-Yw1"/>
+                            <constraint firstItem="soc-Sc-TsT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Kn-vw-DFG"/>
+                            <constraint firstItem="kDl-MD-oWg" firstAttribute="centerY" secondItem="3Yg-AF-xzU" secondAttribute="centerY" id="AlB-an-bbS"/>
+                            <constraint firstItem="7XE-TY-KeO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Gs7-mT-BSB"/>
+                            <constraint firstItem="K2r-sZ-83N" firstAttribute="top" secondItem="soc-Sc-TsT" secondAttribute="bottom" constant="15" id="UUg-O5-lk5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7XE-TY-KeO" secondAttribute="bottom" constant="10" id="Vuz-VK-12c"/>
+                            <constraint firstItem="3Yg-AF-xzU" firstAttribute="top" secondItem="K2r-sZ-83N" secondAttribute="bottom" constant="20" id="Zok-37-w18"/>
+                            <constraint firstItem="K2r-sZ-83N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zv4-gU-jvk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7XE-TY-KeO" secondAttribute="trailing" constant="10" id="deE-LI-g1B"/>
+                            <constraint firstItem="3Yg-AF-xzU" firstAttribute="leading" secondItem="kDl-MD-oWg" secondAttribute="trailing" constant="10" id="fyO-KG-ckw"/>
+                            <constraint firstItem="3Yg-AF-xzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iOh-PV-if0"/>
+                            <constraint firstItem="7XE-TY-KeO" firstAttribute="top" secondItem="3Yg-AF-xzU" secondAttribute="bottom" constant="20" id="uZD-WL-fkv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="switchCellType" destination="3Yg-AF-xzU" id="9sn-ar-J8t"/>
+                        <outlet property="switchLabel" destination="kDl-MD-oWg" id="Pqg-Ef-k0L"/>
+                        <outlet property="tableView" destination="7XE-TY-KeO" id="Wse-AJ-wvp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

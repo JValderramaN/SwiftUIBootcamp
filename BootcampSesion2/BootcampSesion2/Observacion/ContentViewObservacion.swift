@@ -7,25 +7,6 @@
 
 import SwiftUI
 
-// Modelado de Datos
-struct Tarea: Identifiable {
-    let id = UUID()
-    var titulo: String
-    var completada: Bool = false
-}
-
-// Fuente de Verdad y Objeto Observable
-class ListaDeTareasViewModel: ObservableObject {
-    @Published var tareas: [Tarea] = []
-    @Published var bool1: Bool = false
-    var bool2: Bool = true
-    
-    func agregarTarea(titulo: String) {
-        let nuevaTarea = Tarea(titulo: titulo)
-        tareas.append(nuevaTarea)
-    }
-}
-
 // Vista Principal Observacion
 struct ContentViewObservacion: View {
     @StateObject var listaDeTareasVM = ListaDeTareasViewModel()
@@ -69,26 +50,6 @@ struct ContentViewObservacion: View {
         .onChange(of: listaDeTareasVM.bool1) { value in
             print("el nuevo valor es: \(value)")
             listaDeTareasVM.agregarTarea(titulo: "tocada por toogle")
-        }
-    }
-}
-
-// Vista de Fila con Binding
-struct FilaDeTarea: View {
-    @Binding var tarea: Tarea
-    
-    var body: some View {
-        VStack {
-            HStack {
-                Text(tarea.titulo)
-                Spacer()
-                Button(action: {
-                    tarea.completada.toggle()
-                }) {
-                    Image(systemName: tarea.completada ? "checkmark.square.fill" : "square")
-                        .foregroundColor(tarea.completada ? .green : .gray)
-                }
-            }
         }
     }
 }

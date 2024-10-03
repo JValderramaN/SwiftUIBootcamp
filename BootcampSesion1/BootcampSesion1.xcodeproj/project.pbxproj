@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5BB1F92CA6125400BB6783 /* ConditionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB1F82CA6125400BB6783 /* ConditionalView.swift */; };
+		AB5BB1FC2CA612CE00BB6783 /* CustomTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB1FB2CA612CE00BB6783 /* CustomTitleModifier.swift */; };
+		AB5BB1FE2CA6131D00BB6783 /* View+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB1FD2CA6131D00BB6783 /* View+ViewModifier.swift */; };
+		AB5BB2012CA6135200BB6783 /* ContentViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB2002CA6135200BB6783 /* ContentViewList.swift */; };
+		AB5BB2042CA6139800BB6783 /* ContentViewScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB2032CA6139800BB6783 /* ContentViewScrollView.swift */; };
+		AB5BB2072CA613DD00BB6783 /* KingfisherImageExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5BB2062CA613DD00BB6783 /* KingfisherImageExample.swift */; };
 		AB8E10612C94605900D8711F /* BootcampSesion1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E10602C94605900D8711F /* BootcampSesion1App.swift */; };
 		AB8E10632C94605900D8711F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E10622C94605900D8711F /* ContentView.swift */; };
 		AB8E10652C94605B00D8711F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8E10642C94605B00D8711F /* Assets.xcassets */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB5BB1F82CA6125400BB6783 /* ConditionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalView.swift; sourceTree = "<group>"; };
+		AB5BB1FB2CA612CE00BB6783 /* CustomTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleModifier.swift; sourceTree = "<group>"; };
+		AB5BB1FD2CA6131D00BB6783 /* View+ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ViewModifier.swift"; sourceTree = "<group>"; };
+		AB5BB2002CA6135200BB6783 /* ContentViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewList.swift; sourceTree = "<group>"; };
+		AB5BB2032CA6139800BB6783 /* ContentViewScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewScrollView.swift; sourceTree = "<group>"; };
+		AB5BB2062CA613DD00BB6783 /* KingfisherImageExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherImageExample.swift; sourceTree = "<group>"; };
 		AB8E105D2C94605900D8711F /* BootcampSesion1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampSesion1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8E10602C94605900D8711F /* BootcampSesion1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootcampSesion1App.swift; sourceTree = "<group>"; };
 		AB8E10622C94605900D8711F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +48,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB5BB1F72CA6123700BB6783 /* ConditionalView */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BB1F82CA6125400BB6783 /* ConditionalView.swift */,
+			);
+			path = ConditionalView;
+			sourceTree = "<group>";
+		};
+		AB5BB1FA2CA612BA00BB6783 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BB1FB2CA612CE00BB6783 /* CustomTitleModifier.swift */,
+				AB5BB1FD2CA6131D00BB6783 /* View+ViewModifier.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		AB5BB1FF2CA6133F00BB6783 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BB2002CA6135200BB6783 /* ContentViewList.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		AB5BB2022CA6138C00BB6783 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BB2032CA6139800BB6783 /* ContentViewScrollView.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		AB5BB2052CA613B900BB6783 /* Uso de SPM */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BB2062CA613DD00BB6783 /* KingfisherImageExample.swift */,
+			);
+			path = "Uso de SPM";
+			sourceTree = "<group>";
+		};
+		AB5BB2082CA6140B00BB6783 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AB8E10602C94605900D8711F /* BootcampSesion1App.swift */,
+				AB8E10622C94605900D8711F /* ContentView.swift */,
+				AB8E106F2C94F2F700D8711F /* Ejercicios.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		AB8E10542C94605900D8711F = {
 			isa = PBXGroup;
 			children = (
@@ -55,9 +118,12 @@
 		AB8E105F2C94605900D8711F /* BootcampSesion1 */ = {
 			isa = PBXGroup;
 			children = (
-				AB8E10602C94605900D8711F /* BootcampSesion1App.swift */,
-				AB8E10622C94605900D8711F /* ContentView.swift */,
-				AB8E106F2C94F2F700D8711F /* Ejercicios.swift */,
+				AB5BB2082CA6140B00BB6783 /* Core */,
+				AB5BB2052CA613B900BB6783 /* Uso de SPM */,
+				AB5BB2022CA6138C00BB6783 /* ScrollView */,
+				AB5BB1FF2CA6133F00BB6783 /* List */,
+				AB5BB1FA2CA612BA00BB6783 /* ViewModifier */,
+				AB5BB1F72CA6123700BB6783 /* ConditionalView */,
 				AB8E10642C94605B00D8711F /* Assets.xcassets */,
 				AB8E10662C94605B00D8711F /* Preview Content */,
 			);
@@ -148,9 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5BB1FC2CA612CE00BB6783 /* CustomTitleModifier.swift in Sources */,
+				AB5BB2012CA6135200BB6783 /* ContentViewList.swift in Sources */,
 				AB8E10632C94605900D8711F /* ContentView.swift in Sources */,
+				AB5BB1FE2CA6131D00BB6783 /* View+ViewModifier.swift in Sources */,
 				AB8E10702C94F2F700D8711F /* Ejercicios.swift in Sources */,
 				AB8E10612C94605900D8711F /* BootcampSesion1App.swift in Sources */,
+				AB5BB2042CA6139800BB6783 /* ContentViewScrollView.swift in Sources */,
+				AB5BB1F92CA6125400BB6783 /* ConditionalView.swift in Sources */,
+				AB5BB2072CA613DD00BB6783 /* KingfisherImageExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
