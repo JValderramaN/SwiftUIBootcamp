@@ -12,6 +12,8 @@ struct FilaDeTarea: View {
     @Binding var tarea: Tarea
     
     var body: some View {
+        let _ = Self._printChanges()
+        
         VStack {
             HStack {
                 Text(tarea.titulo)

@@ -11,7 +11,8 @@ import SwiftUI
 struct BootcampSesion1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let data = 1..<5
+            ContentViewScrollView(rango: data)
         }
     }
 }
