@@ -11,7 +11,7 @@ import SwiftUI
 struct BootcampSesion5App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PoorPerformanceExample()
         }
     }
 }
