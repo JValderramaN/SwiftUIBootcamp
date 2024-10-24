@@ -79,7 +79,17 @@ actor CounterActor {
     }
     
     var someOtherValue: Int {
-        get async {
+        get async throws {
+            if count == 0 {
+                throw URLError(.cancelled)
+            }
+            
+            try await Task.sleep(nanoseconds: 1_000_000_000)
+            try await Task.sleep(nanoseconds: 1_000_000_000)
+            try await Task.sleep(nanoseconds: 1_000_000_000)
+            try await Task.sleep(nanoseconds: 1_000_000_000)
+            try await Task.sleep(nanoseconds: 1_000_000_000)
+            try await Task.sleep(nanoseconds: 1_000_000_000)
             return 10
         }
     }
@@ -90,6 +100,26 @@ actor CounterActor {
 //          print("error")
 //        }
 //    }
+    
+    // si compila porque es ambiente async
+    func broken() async throws -> Int   {
+        do {
+            let currentsSomeOtherValue = try await someOtherValue
+            if currentsSomeOtherValue == 0 {
+                print("error")
+            }
+            
+            let otroValor = try await broken()
+            if otroValor == currentsSomeOtherValue {
+                print()
+            }
+            
+        } catch {
+            print(error)
+        }
+        
+        return 0
+    }
     
     // Async throwing function that simulates fetching data
     func fetchData() async throws -> String {

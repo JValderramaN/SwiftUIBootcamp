@@ -14,6 +14,7 @@
 		AB47B3072CCADABB0072497C /* ActorsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47B3062CCADABB0072497C /* ActorsExample.swift */; };
 		AB47B30E2CCAE6590072497C /* CallbackToContinuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47B30D2CCAE6590072497C /* CallbackToContinuation.swift */; };
 		AB47B3102CCAEAF60072497C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47B30F2CCAEAF60072497C /* DateExtension.swift */; };
+		AB47B3122CCAFEB60072497C /* funcAsyncThrows.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB47B3112CCAFEB60072497C /* funcAsyncThrows.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		AB47B3062CCADABB0072497C /* ActorsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsExample.swift; sourceTree = "<group>"; };
 		AB47B30D2CCAE6590072497C /* CallbackToContinuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackToContinuation.swift; sourceTree = "<group>"; };
 		AB47B30F2CCAEAF60072497C /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		AB47B3112CCAFEB60072497C /* funcAsyncThrows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funcAsyncThrows.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				AB47B30D2CCAE6590072497C /* CallbackToContinuation.swift */,
+				AB47B3112CCAFEB60072497C /* funcAsyncThrows.swift */,
 			);
 			path = Exercise;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				AB47B3072CCADABB0072497C /* ActorsExample.swift in Sources */,
 				AB47B3102CCAEAF60072497C /* DateExtension.swift in Sources */,
 				AB47B2FA2CCACCC30072497C /* ContentView.swift in Sources */,
+				AB47B3122CCAFEB60072497C /* funcAsyncThrows.swift in Sources */,
 				AB47B30E2CCAE6590072497C /* CallbackToContinuation.swift in Sources */,
 				AB47B2F82CCACCC30072497C /* BootcampSesion7App.swift in Sources */,
 			);
